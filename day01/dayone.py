@@ -48,7 +48,7 @@ def process_line(line):
 			string = ''
 		else:
 			string+=s
-	# Handly any numbers in a remaining string.
+	# Handle any numbers in a remaining string, going forward if our num array is empty and backwards if we're at the end.
 	if not nums:
 		string_num = forward_process_string(string)
 	else: 
